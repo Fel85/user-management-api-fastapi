@@ -5,7 +5,7 @@ Production-ready REST API for user management, built to demonstrate backend best
 
 ---
 
-## 🚀 Features
+##  Features
 - Full CRUD for users
 - JWT Authentication (OAuth2 Password Flow)
 - Secure password hashing (bcrypt)
@@ -16,7 +16,7 @@ Production-ready REST API for user management, built to demonstrate backend best
 
 ---
 
-## 🧱 Architecture
+##  Architecture
 The project follows a layered backend architecture:
 
 - **API Layer**: Request/response handling (FastAPI routers)
@@ -29,7 +29,7 @@ This structure allows scalability, testability, and maintainability.
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 - FastAPI & Uvicorn
 - SQLAlchemy 2.0
 - Pydantic
@@ -39,7 +39,7 @@ This structure allows scalability, testability, and maintainability.
 
 ---
 
-## ⚙️ Setup
+##  Setup
 
 ### 1) Create virtual environment
 ```bash
@@ -65,13 +65,13 @@ DATABASE_URL=sqlite:///./app.db
 JWT_SECRET=change_this_in_production
 ```
 
-### ▶️ Run the API
+###  Run the API
 ```bash
 uvicorn app.main:app --reload
 ```
 Swagger UI:http://127.0.0.1:8000/docs
 
-### 🔐 Authentication Flow (JWT)
+###  Authentication Flow (JWT)
 
 1. Create a user  
 2. Login  
@@ -82,7 +82,7 @@ Example header:
 Authorization: Bearer<ACCESS_TOKEN>
 
 
-### 📌 Main Endpoints
+###  Main Endpoints
 | Method | Endpoint              | Description      |
 |--------|-----------------------|------------------|
 | POST   | `/api/v1/users`       | Create user      |
@@ -92,7 +92,7 @@ Authorization: Bearer<ACCESS_TOKEN>
 | PUT    | `/api/v1/users/{id}`  | Update own user  |
 | DELETE | `/api/v1/users/{id}`  | Delete own user  |
 
-### 🧪 Tests
+###  Tests
 
 Run automated tests:
 ```bash
@@ -112,7 +112,7 @@ Install driver:
 pip install psycopg2-binary
 ```
 
-### 🎯 Purpose
+###  Purpose
 
 This project was built as a portfolio backend project to demonstrate:
 
@@ -122,6 +122,6 @@ This project was built as a portfolio backend project to demonstrate:
 - Clean architecture
 - Testing practices
 
-### 📄 License
+###  License
 
 MIT
